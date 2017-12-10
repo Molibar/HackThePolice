@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using ExpressMapper;
+using HackThePolice.Api.Models;
+using HackThePolice.Infrastructure.Core.Models;
 
 namespace HackThePolice.Api
 {
@@ -18,6 +17,14 @@ namespace HackThePolice.Api
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Mapper.Register<Incident, IncidentModel>();
+            Mapper.Register<Incident, Incident>();
+            Mapper.Register<IncidentModel, Incident>();
+            Mapper.Register<Statement, StatementModel>();
+            Mapper.Register<StatementModel, Statement>();
+            Mapper.Register<Statement, Statement>();
+            Mapper.Compile();
         }
     }
 }

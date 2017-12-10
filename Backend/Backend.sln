@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackThePolice.Api", "HackTh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackThePolice.Infrastructure", "HackThePolice.Infrastructure\HackThePolice.Infrastructure.csproj", "{C6E4445F-054E-4301-9BF1-9DA1A4BCDC7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackThePolice.QRCodeGenerator", "HackThePolice.QRCodeGenerator\HackThePolice.QRCodeGenerator.csproj", "{798856B7-3473-4D4F-B92D-900160A417CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C6E4445F-054E-4301-9BF1-9DA1A4BCDC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6E4445F-054E-4301-9BF1-9DA1A4BCDC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6E4445F-054E-4301-9BF1-9DA1A4BCDC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798856B7-3473-4D4F-B92D-900160A417CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798856B7-3473-4D4F-B92D-900160A417CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798856B7-3473-4D4F-B92D-900160A417CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798856B7-3473-4D4F-B92D-900160A417CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

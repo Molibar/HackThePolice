@@ -1,0 +1,21 @@
+﻿
+
+Enable-Migrations -ContextTypeName HackThePolice.Infrastructure.IncidentContext -MigrationsDirectory IncidentContext_Migrations
+
+Add-Migration Initialize-IncidentContext -ConfigurationTypeName HackThePolice.Infrastructure.IncidentContext_Migrations.Configuration -Verbose
+Update-Database -ConfigurationTypeName HackThePolice.Infrastructure.IncidentContext_Migrations.Configuration -Verbose -Script
+
+
+
+// Returns all the migration names
+Get-Migrations -ConfigurationTypeName HackThePolice.Infrastructure.IncidentContext_Migrations.Configuration
+// Roll back migrations
+Update-Database -TargetMigration:"Name-Of-Migration-Without-Timestamp" -ConfigurationTypeName HackThePolice.Infrastructure.IncidentContext_Migrations.Configuration -Verbose -Script
+
+// Roll back ALL migrations
+Update-Database -Target:0 -ConfigurationTypeName HackThePolice.Infrastructure.IncidentContext_Migrations.Configuration -Verbose
+
+
+
+
+
